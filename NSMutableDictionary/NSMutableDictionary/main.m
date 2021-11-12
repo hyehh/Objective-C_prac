@@ -20,8 +20,16 @@ int main(int argc, const char * argv[]) {
         [newFruitListing setObject:@"watermelon" forKey:@"green"];
         [newFruitListing setObject:@"lemon" forKey:@"yellow"];
         [newFruitListing setObject:@"tomato" forKey:@"red"];
+        
         NSLog(@"%@", newFruitListing);
- 
+        
+        NSString *checkValue = [newFruitListing objectForKey:@"yellow"];
+        
+        // checkValue 값이 있으면 Value 값 등장, 값이 없으면 (null) 값 등장
+        NSLog(@"Hello~~~ %@", checkValue);
+        
+        NSLog(@"나와라! %lu", newFruitListing.count);
+        
     }
     return 0;
 }
